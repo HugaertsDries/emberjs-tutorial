@@ -1,6 +1,11 @@
 {{!-- generated using ember CLI `>ember generate component rental/image` --}}
 {{!-- namespaced component '<Rental:Image>' --}}
-<div class="image">
+<button type="button" class="image {{if this.isLarge "large"}}" {{on "click" this.toggleSize}}>
     {{!-- forwarding attributes using the "splattributes" syntax --}}
     <img ...attributes>
-</div>
+    {{#if this.isLarge}}
+    <small>View Smaller</small>
+    {{else}}
+    <small>View Larger</small>
+    {{/if}}
+</button>
