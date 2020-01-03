@@ -1,0 +1,9 @@
+{{!-- <Map/> --}}
+<div class="map">
+  <img 
+    {{!-- Ember applies the attributes in the order that they appear. --}}
+    alt="Map image at coordinates {{@lat}},{{@lng}}"
+    ...attributes
+    src={{this.src}}
+    width={{@width}} height={{@height}}>
+</div>
